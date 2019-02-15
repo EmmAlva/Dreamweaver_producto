@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Proterra</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+<!-- <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32" /> -->
+<link rel="icon" type="image/png" href="icons/favicon-16x16.png" sizes="16x16" />
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<wrapper class="d-flex flex-column">
+  <main id="generalSite" role="main" class="container-fluid p-0 flex-fill" > 
+    <!-- fixed navbar -->
+    <nav class="navbar p-0 navbar-expand-md fixed-top  position-absolute"> 
+		<a href="#" class="ml-3 navbar-brand">
+			<img class="d-none d-lg-block"  src="img/logo.png" alt="logo large">
+			<img class="d-block d-lg-none"  src="img/logo-sm.png" alt="logo medium small">
+		</a>
+      <button class="navbar-toggler collapsed border-0 w-25" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <img src="icons/icon-menu.png" alt="icon menu">
+    </button>
+      <div class="navbar-collapse p-3 collapse" id="navbarCollapse" >
+        <ul class="navbar-nav mx-auto">
+          <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  SERVICIOS 
+              </a>
+              <div class="dropdown-menu bg-against" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item text-white" href="premier.html">Premier</a>
+                <a class="dropdown-item text-white" href="ejecutivo1.html">Ejecutivo VIP - 1</a>
+                <a class="dropdown-item text-white" href="#">Ejecutivo VIP - 2</a>
+                <a class="dropdown-item text-white" href="#">Económico</a>
+                <a class="dropdown-item text-white" href="#">CARGO</a>
+              </div>
+            </li>
+          <li class="nav-item "> <a href="#" class="nav-link"> DESTINOS </a> </li>
+          <li class="nav-item "> <a href="#" class="nav-link"> PROMOCIONES </a> </li>
+          <li class="nav-item "> <a href="#" class="nav-link"> LOCALES </a> </li>
+        </ul>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item d-none d-lg-block"><a href="#" class="nav-link"><img src="icons/icon-buy.png" alt="Carrito de compras"></a></li>
+			    <li class="nav-item d-block d-lg-none "><a href="#" class="nav-link"><img src="icons/icon-buy-md.png" alt="Carrito de compras"></a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+          <li class="nav-item"><a href="#" class="nav-link">Sign Up</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item  active">
+            <img class="d-none d-md-block w-100" src="img/slider1.jpg" alt="First slide">
+            <img class="d-block d-md-none w-100" src="img/slider1_sm.jpg" alt="First slide">
+            <div class="carousel-caption ">
+                <h2 class="mb-md-3 text-uppercase">EL MEJOR DESTINO A TU ALCANCE. HAZ UNA RESERVA</h2>
+                <form id="book" class="form-inline justify-content-center d-none d-md-flex">
+                  <div class="form-group mb-2">
+                      <input type="text" readonly class="form-control" id="origen" value="" placeholder="Origen">
+                  </div>
+                  <div class="form-group mx-sm-3 mb-2">
+                      <input type="text" class="form-control" id="destino" placeholder="Destino">
+                  </div>
+                  <div class="form-group mb-2">
+                      <input type="text" readonly class="form-control" id="ida" value="" placeholder="Fecha ida">
+                  </div>
+                  <div class="form-group mx-sm-3 mb-2">
+                      <input type="text" class="form-control" id="retorno" placeholder="Fecha retorno">
+                  </div>
+                  <button type="submit" class="btn btn-success mb-2 d-none d-lg-block">BUSCAR</button>
+                </form>
+                <button type="submit" form="book" class="btn bg-theme text-white mx-auto mb-2 d-none d-md-block d-lg-none">BUSCAR</button>
+               
+            <span class="icon-down"></span>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img class="d-none d-md-block w-100" src="img/slider2.jpg" alt="Second slide">
+            <img class="d-block d-md-none w-100" src="img/slider2_sm.jpg" alt="Second slide">
+          <div class="carousel-caption ">
+            <h2 class="mb-md-3">EL MEJOR DESTINO A TU ALCANCE. HAZ UNA RESERVA</h2>
+            <form id="book2" class="form-inline justify-content-center d-none d-md-flex">
+                <div class="form-group mb-2">
+                    <input type="text" readonly class="form-control" id="origen" value="" placeholder="Origen">
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <input type="text" class="form-control" id="destino" placeholder="Destino">
+                </div>
+                <div class="form-group mb-2">
+                    <input type="text" readonly class="form-control" id="ida" value="" placeholder="Fecha ida">
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <input type="text" class="form-control" id="retorno" placeholder="Fecha retorno">
+                </div>
+                <button type="submit" class="btn bg-theme  text-white mb-2 d-none d-lg-block">BUSCAR</button>
+              </form>
+              <button type="submit" form="book2" class="btn bg-theme text-white mx-auto mb-2 d-none d-md-block d-lg-none">BUSCAR</button>
+        </div>
+		</div>
+        <div class="carousel-item">
+            <img class="d-none d-md-block w-100" src="img/slider3.jpg" alt="Third slide">
+            <img class="d-block d-md-none w-100" src="img/slider3_sm.jpg" alt="Third slide">
+          <div class="carousel-caption ">
+            <h2 class="mb-md-3">EL MEJOR DESTINO A TU ALCANCE. HAZ UNA RESERVA</h2>
+            <form id="book3" class="form-inline justify-content-center d-none d-md-flex">
+                <div class="form-group mb-2">
+                    <input type="text" readonly class="form-control" id="origen" value="" placeholder="Origen">
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <input type="text" class="form-control" id="destino" placeholder="Destino">
+                </div>
+                <div class="form-group mb-2">
+                    <input type="text" readonly class="form-control" id="ida" value="" placeholder="Fecha ida">
+                </div>
+                <div class="form-group mx-sm-3 mb-2">
+                    <input type="text" class="form-control" id="retorno" placeholder="Fecha retorno">
+                </div>
+                <button type="submit" class="btn bg-theme text-white mb-2 d-none d-lg-block">BUSCAR</button>
+              </form>
+              <button type="submit" form="book3" class="btn bg-theme text-white mx-auto mb-2 d-none d-md-block d-lg-none">BUSCAR</button>
+        </div>
+      </div>
+      <ol class="d-none d-md-flex carousel-indicators m-0">
+          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+    </div>
+    </div>
+    <section id="promociones" >
+      <div class="container text-center">
+        <h3 class=" mt-5 mb-0">PROMOCIONES</h3>
+        <img class="" src="icons/adorno_sm.png" alt="adorno subtitle">
+        <div class="row">
+          <div class="col-12 col-md-4">
+            <div class="hexag pt-4 pb-4">
+                <img class="img-fluid" src="img/hexa1_sm.jpg" alt="Promocion 1">
+              <div class="halfHexa ex1 position-absolute ">
+                <h1 class="m-0">20%</h1>
+                <p class="m-md-0" >descuento</p>
+                <p class="pr-5">CARGA - ENCOMIENDA</p>
+             </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="hexag pt-4 pb-4">
+               <img class="img-fluid" src="img/hexa2_sm.jpg" alt="Promocion 2">
+              <div class="halfHexa ex2 position-absolute">
+                  <span>Aprovecha el <strong>Cyber Monday</strong> y ahorra <strong>$400</strong> en viajes por toda la Cordillera </span> </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="hexag pt-4">
+            <img class="img-fluid" src="img/hexa3_sm.png" alt="Promocion 3">
+              <div class="halfHexa ex3 text-right position-absolute">
+                <h3 class="m-md-0">LIMA - CUZCO</h3>
+                <span>desde <span>$230</span>*</span>
+                <p class="mr-6">*TODO INCLUIDO</p>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="destinos">
+      <div class="container text-center">
+        <h3 class=" mt-5 mb-0">DESTINOS</h3>
+        <img class="" src="icons/adorno_sm.png" alt="adorno subtitle">
+        <div class="row d-block d-md-none">
+          <div id="carruselDestinos" class="pt-4 carousel slide d-bloc d-md-none" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="img/MontañadeColores-Cuzco.jpg" alt="Cuzco colores">
+                    <div class="carousel-caption p-0 d-block d-md-none">
+                        <h4>Montaña de Colores</h4>
+                        <h5 class="">CUZCO</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/BosquedePiedrasdeHuayllay-Pasco.jpg" alt="Bosque piedras Huayllay">
+                    <div class="carousel-caption p-0 d-block d-md-none">
+                          <h4>Bosque de Piedras de Huayllay</h4>
+                          <h5 class="text-uppercase">Pasco</h5>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="img/ParqueNacionalCerrosdeAmotape_Piura_Tumbes.jpg" alt="Parque Amotape">
+                    <div class="carousel-caption p-0 d-block d-md-none">
+                        <h4>Parque Nacional Cerro de Amotape</h4>
+                        <h5 class="text-uppercase ">Piura - Tumbes</h5>
+                    </div>
+                </div>
+            </div>
+            <ol class="carousel-indicators pt-2">
+              <li data-target="#carruselDestinos" data-slide-to="0" class="active"></li>
+              <li data-target="#carruselDestinos" data-slide-to="1"></li>
+              <li data-target="#carruselDestinos" data-slide-to="2"></li>
+           </ol>
+        </div>
+        
+        </div>
+        <div class="row d-none d-md-flex">
+            <div class="col-md-6 col-lg-4 pb-4">
+                <div id="montana" class="card destino">
+                  <!-- <img class="card-img " src="img/MontañadeColores-Cuzco.jpg" alt="Montaña de Colores"> -->
+                  <div class="card-img-overlay d-flex flex-column justify-content-end text-left text-white p-2">
+                      <h4 class="card-title m-0">Montaña de Colores</h4>
+                      <h5 class="m-0">CUZCO</h5>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 pb-4 ">
+                <div id="bosque" class="card destino">
+                  <!-- <img class="card-img " src="img/BosquedePiedrasdeHuayllay-Pasco.jpg" alt="Bosque de piedras de Huayllay"> -->
+                  <div class="card-img-overlay d-flex flex-column justify-content-end text-left text-white p-2">
+                      <h4 class="card-title m-0">Bosque de piedras de Huayllay</h4>
+                      <h5 class="m-0">PASCO</h5>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 pb-4">
+                <div id="bahia" class="card destino">
+                  <!-- <img class="card-img " src="img/BahiadeSanFernando–Ica.jpg" alt="Bahía de San Fernando"> -->
+                  <div class="card-img-overlay d-flex flex-column justify-content-end text-left text-white p-2">
+                      <h4 class="card-title m-0">Bahía de San Fernando</h4>
+                      <h5 class="m-0">ICA</h5>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 pb-4">
+                <div id="parque" class="card destino">
+                  <!-- <img class="card-img " src="img/ParqueNacionalCerrosdeAmotape_Piura_Tumbes.jpg" alt="ParqueNacionalCerrosdeAmotape_Piura_Tumbes"> -->
+                  <div class="card-img-overlay d-flex flex-column justify-content-end text-left text-white p-2">
+                      <h4 class="card-title m-0">Parque Nacional Cerros de Amotape</h4>
+                      <h5 class="m-0">PIURA - TUMBES</h5>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 pb-4">
+                <div id="mausoleos" class="card destino">
+                  <img class="card-img " src="img/MausoleosdeRevash–Amazonas.jpg" alt="Mausoleos de Revash">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end text-left text-white p-2">
+                      <h4 class="card-title m-0">Mausoleos de Revash</h4>
+                      <h5 class="m-0">AMAZONAS</h5>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 pb-4">
+                <div id="apu" class="card destino">
+                  <img class="card-img " src="img/ApuAusangate-Cuzco.jpg" alt="Apu Ausangate">
+                  <div class="card-img-overlay d-flex flex-column justify-content-end text-left text-white p-2">
+                      <h4 class="card-title m-0">Apu Ausangate</h4>
+                      <h5 class="m-0">CUZCO</h5>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 pb-4">
+                <div id="cataratas" class="card destino">
+                  <!-- <img class="card-img " src="img/CataratadeYumbilla–Amazonas.jpg" alt="Cataratas de Yumbilla"> -->
+                  <div class="card-img-overlay d-flex flex-column justify-content-end text-left text-white p-2">
+                      <h4 class="card-title m-0">Cataratas de Yumbilla</h4>
+                      <h5 class="m-0">AMAZONAS</h5>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 pb-4 ">
+                <div id="canon" class="card destino">
+                  <!-- <img class="card-img img-fluid " src="img/CanondeTinajani–Puno.jpg" alt="Cañon de Tinajani Puno"> -->
+                  <div class="card-img-overlay d-flex flex-column justify-content-end text-left text-white p-2">
+                      <h4 class="card-title m-0">Cañon de Tinajani</h4>
+                      <h5 class="m-0">PUNO</h5>
+                  </div>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 pb-4">
+                <div id="restos" class="card destino">
+                  <!-- <img class="card-img " src="img/RestosArqueologicosdeTantamayo–Huánuco.jpg" alt="Restos Arqueológicos de Tantamayo Huánuco"> -->
+                  <div class="card-img-overlay d-flex flex-column justify-content-end text-left text-white p-2">
+                      <h4 class="card-title m-0">Restos Arqueológicos de Tantamayo</h4>
+                      <h5 class="m-0">HUANUCO</h5>
+                  </div>
+              </div>
+            </div>
+        </div>
+       
+        <div class="row fixed-bottom d-block d-md-none">
+          <div class="col-12 bg-against">
+            <div class="p-2" id="reserva">
+              <span class="text-uppercase text-white">Realiza tu compra aqui</span>
+            </div>
+          </div>
+        </div>
+       
+      </div>
+    </section>
+    <section id="subscribe" class="d-none d-md-block bg-against">
+        <div class="text-center pt-4 pb-4 text-white">
+          <p>Enterate de todas las novedades</p>
+          <div class="input-group  mx-auto mb-3">
+            <input type="text" class="form-control" placeholder="Email" aria-label="Email" aria-describedby="subs">
+            <div class=" input-group-append">
+              <span class="input-group-text border-0 bg-theme text-white" id="subs">SUSCRIBETE</span>
+            </div>
+          </div>
+          <span class="small">No spam! uso exclusivo</span>
+          
+        </div>
+    </section>
+  </main>
+  <footer id="footProterra" class="bg-newdark footer container-fluid">
+    <div class="row text-white pt-4 pb-md-4">
+      <div class="col-12 col-md-6 col-lg-3 text-center ">
+        <img src="img/logo_footer.png" alt="Logo footer">
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 ">
+          <div class="redes pt-5 pb-5 d-block d-md-none text-center ">
+            <img src="icons/icon-facebook.png" alt="Facebook"> 
+            <img src="icons/icon-twitter.png" alt="Twitter">
+            <img src="icons/icon-instagram.png" alt="Instagram">
+            <img src="icons/icon-youtube.png" alt="Youtube">
+          </div>
+          <div class="about d-none d-md-block pt-lg-4">
+            <p class="font-weight-bold">SOBRE LA EMPRESA</p>
+            <p>PROTERRA SAC es una empresa formada para ofrecer un servicio exclusivo y de alta calidad en el transporte interprovincial.</p>
+          </div>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 pt-lg-4 d-none d-md-flex flex-column justify-content-center align-items-center ">
+        <p class="font-weight-bold text-uppercase m-0 ">Mapa del sitio</p>
+        <nav class="nav flex-column">
+            <a class="nav-link pl-0 text-white" href="#">Servicios</a>
+            <a class="nav-link pl-0  text-white" href="#">Destinos</a>
+            <a class="nav-link pl-0  text-white" href="#">Promociones</a>
+            <a class="nav-link pl-0  text-white" href="#">Locales</a>
+            <a class="nav-link pl-0  text-white" href="#">Login</a>
+            <a class="nav-link pl-0  text-white" href="#">Sign Up</a>
+        </nav>
+      </div>
+      <div class="col-12 col-md-6 col-lg-3 pt-lg-4 text-white text-center d-flex flex-column justify-content-md-end justify-content-lg-between">
+        <address>
+           <p class="text-uppercase font-weight-bold">Contacto</p>   
+          <span >Av. Estación Gran Central 148</span>
+          <div>Tel. 9457 2387</div>
+          <span>info@proterra.com</span>     
+        </address>
+       
+        <div class="redes pt-5 pb-5 pt-md-0 pb-md-0 d-none d-lg-block">
+            <img src="icons/icon-facebook.png" alt="Facebook"> 
+            <img src="icons/icon-twitter.png" alt="Twitter">
+            <img src="icons/icon-instagram.png" alt="Instagram">
+            <img src="icons/icon-youtube.png" alt="Youtube">
+          </div>
+      </div>
+      <div class="col col-md-6 col-lg-3 d-block d-md-none">
+
+          <nav class="nav flex-column siteMap">
+              <a class="nav-link" href="#">Servicios</a>
+              <a class="nav-link" href="#">Destinos</a>
+              <a class="nav-link" href="#">Promociones</a>
+              <a class="nav-link" href="#">Locales</a>
+              <a class="nav-link" href="#">Login</a>
+              <a class="nav-link" href="#">Sign Up</a>
+            </nav>
+        </div>
+    </div>
+    <p class="m-0 p-2 text-center text-white" >designed by Emma, Copyright 2018</p>
+  </footer>
+</wrapper>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+</body>
+</html>
+

@@ -1,0 +1,469 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700|Roboto:300,400,500,700');
+@import 'colors';
+@import 'media.scss';
+
+/* Sticky footer styles*/
+body {
+  font-family: Roboto;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  min-height:100vh; /*sticky footer*/
+}
+wrapper {
+  min-height:100vh; /*sticky footer*/
+}
+
+.flex-fill {
+  flex:1 1 auto; /*sticky footer*/
+}
+
+// REUSABLES
+.bg-theme{
+  background: $theme;
+  &:hover{
+    background: $colorHover1;
+  }
+}
+.bg-against{
+  background: $againstTheme;
+}
+.bg-newdark{
+  background: $darkbg;
+}
+.text-theme{
+  color: $textColor;
+}
+.mr-6{
+  margin-right: 4rem;
+}
+.b-0{
+  bottom: 0;
+}
+
+.carousel-indicators{
+  li{
+    width: 15px;
+    height: 15px;
+    border: 1px solid $theme;
+    border-radius: 50%;
+    background: transparent;
+  }
+  .active{
+    background: $theme;
+  }
+}   
+// HEADER
+#generalSite{
+  nav {
+    ul {
+      .nav-item {
+        .nav-link {
+          color: white;
+        }
+      }
+    }
+  }
+  #navbarCollapse{
+    &.collapsing{
+      background: $theme;
+    }
+   
+      &.show{
+        background: $theme;
+      }
+    
+  }
+}
+
+.otherSite{
+  nav {
+    ul {
+      .nav-item {
+        .nav-link {
+          color: $textColor;
+        }
+      }
+    }
+  }
+  #navbarCollapse{
+    &.collapsing{
+      background: $againstTheme;
+      .nav-item{
+        .nav-link{
+          color: white;
+        }
+      }
+    }
+   
+      &.show{
+        background: $againstTheme;
+        .nav-item{
+          .nav-link{
+            color: white;
+          }
+        }
+      }
+    
+  }
+  .premier{
+    background-image: url('../img/services/bussprem.jpg');
+  }
+  .eject1{
+    background-image: url('../img/services/sillasEje1.jpg');
+    background-position-y: -50px;
+
+  }
+  .eject2{
+    background-image: url('../img/services/bus.jpg');
+    background-position-y: -86px;
+
+  }
+  .bg-hexa{
+    height: 10%;
+  }
+}
+
+.sector{
+  height: 50px;
+  background-attachment: fixed;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-top: 57px;
+}
+
+// SLIDER
+#carouselExampleIndicators{
+  .carousel-inner{
+    .carousel-item{
+     
+    }
+    .carousel-caption{
+      bottom: 30%;
+      h2{
+        font-size: 1.3rem;
+        line-height: 1.5;
+        font-weight: 400;
+      }
+    }
+  }
+}
+.slider1{
+  background-image: url('../img/img_export/slider1.jpg');
+}
+
+// SECTIONS
+section{
+  h3{
+    font-family: Raleway;
+    font-weight: 600;
+  }
+}
+// PROMOCIONES
+.halfHexa{
+  color: white;
+  &.ex1{
+      bottom: 16%;
+      right: 15%;
+      text-align: right;
+      h1{
+        font-size: 4rem;
+        font-weight: 600;
+      }
+    }
+  &.ex2{
+    bottom: 19%;
+    right: 13%;
+    width: 50%;
+  }
+  &.ex3{
+    bottom: 7%;
+    right: 17%;
+    span{
+      span{
+        font-size: 1.8rem;
+      }
+    }
+  } 
+  span{
+    font-size: 1.2rem;
+
+  }
+  p{
+    font-size: 1.2rem;
+  }
+  
+}
+
+// DESTINOS
+
+#destinos{
+  #carruselDestinos{
+    .carousel-inner{
+      .carousel-item{
+        .carousel-caption{
+          right: 0;
+          left: 15px;
+          text-align: left;
+          bottom: 0;
+        }
+      }
+    }
+    .carousel-indicators{
+      position: relative;
+      bottom: 0;
+    }
+
+  }
+  
+}
+
+// FOOTER
+.siteMap{
+    a{
+      text-decoration: underline;
+      color: white;
+    }
+}
+.destino{
+  height: 232px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#montana{
+  background-image: url('../img/MontañadeColores-Cuzco.jpg');
+}
+#bosque{
+  background-image: url('../img/BosquedePiedrasdeHuayllay-Pasco.jpg');
+}
+#bahia{
+  background-image: url('../img/BahiadeSanFernando–Ica.jpg');
+}
+#parque{
+  background-image: url('../img/ParqueNacionalCerrosdeAmotape_Piura_Tumbes.jpg');
+}
+#mausoleos{
+  background-image: url('../img/MausoleosdeRevash–Amazonas.jpg');
+}
+#apu{
+  background-image: url('../img/ApuAusangate-Cuzco.jpg');
+}
+#cataratas{
+  background-image: url('../img/CataratadeYumbilla_Amazonas.jpg');
+}
+#canon{
+  background-image: url('../img/CanondeTinajani–Puno.jpg');
+  background-position-y: 30%;
+}
+#restos{
+  background-image: url('../img/RestosArqueologicosdeTantamayo–Huánuco.jpg');
+  background-position-y: 90%;
+
+}
+
+// SUBSCRIBE
+#subscribe{
+  p{
+    font-size: 1rem;
+  }
+  .input-group{
+    width: 50%;
+    input{
+      font-size: 0.8rem;
+    }
+    .input-group-append{
+      cursor: pointer;
+    }
+    span{
+      font-size: 0.8rem;
+    }
+  }
+}
+
+#footProterra{
+  .about{
+    margin-top: 30%;
+  }
+}
+
+  @include respond-to($tablet-landscape){
+    // SLIDER
+#carouselExampleIndicators{
+  .carousel-inner{
+    .carousel-item{
+     
+    }
+    .carousel-caption {
+      bottom: 5%;
+      h2{
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+    
+  
+    nav{
+      ul{
+        .nav-item {
+          .nav-link {
+            font-size: 0.8rem;
+          }
+        }
+      }
+    }
+
+    // PROMOCIONES
+.halfHexa{
+  &.ex1{
+      bottom: 17%;
+      right: 8%;
+      h1{
+        font-size: 3rem;
+        font-weight: 600;
+      }
+
+    }
+  &.ex2{
+    bottom: 17%;
+    right: 6%;
+    width: 70%;
+  }
+  &.ex3{
+    bottom: 13%;
+    right: 8%;
+    span{
+      span{
+        font-size: 1.2rem;
+      }
+    }
+    h3{
+      font-size: 1.4rem;
+    }
+  } 
+  span{
+    font-size: 0.9rem;
+
+  }
+  p{
+    font-size: 0.8rem;
+  }
+  
+}
+// DESTINOS
+#destinos{
+  .destino{
+    h4{
+      font-size: 1.2rem;
+
+    }
+    h5{
+      font-size: 1rem;
+
+    }
+  }
+}
+
+// footer
+#footProterra{
+  .about{
+   text-align: center;
+  }
+}
+
+
+// PREMIER HTML
+.sector{
+  margin-top: 69px;
+ 
+}
+.otherSite{
+  .premier{
+    background-position-y: -99px;
+  
+  }
+  .eject1{
+    background-position-y: -10px;
+  }
+  .eject2{
+    background-position-y: -200px
+  }
+  .bg-hexa{
+    height: 20%;
+  }
+}
+
+  }
+
+@include respond-to($large-desktop){
+  nav {
+    ul{
+      .nav-item {
+        .nav-link {
+          // font-size: 0.8rem;
+        }
+      }
+    }
+  }
+  #carouselExampleIndicators{
+    .carousel-inner{
+      .carousel-item{
+       
+      }
+      .carousel-caption {
+        right: 8%;
+        left: 8%;
+        h2{
+          font-size: 3rem;
+        }
+      }
+    }
+  }
+
+  // SUBSCRIBE
+#subscribe{
+  p{
+    font-size: 1.5rem;
+  }
+  .input-group{
+    width: 25%;
+    input{
+      font-size: 1rem;
+    }
+    span{
+      font-size: 1rem;
+    }
+  }
+}
+#footProterra{
+  .about{
+    margin-top: 0%;
+  }
+}
+
+// PREMIER HTML
+.sector{
+    margin-top: 87px;
+    height: 100px;
+   
+  }
+  .otherSite{
+    .premier{
+      background-position-y: -256px;
+  
+    }
+    .eject1{
+      background-position-y: -60px;
+    }
+    .eject2{
+      background-size: cover;
+      background-position-y: -503px;
+    }
+    .bg-hexa{
+      height: 20%;
+    }
+  }
+}
+
+
+

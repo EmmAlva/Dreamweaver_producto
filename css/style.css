@@ -1,0 +1,147 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700|Roboto:300,400,500,700");
+/* Sticky footer styles*/
+/* line 6, scss/style.scss */ body { font-family: Roboto; margin: 0; padding: 0; box-sizing: border-box; min-height: 100vh; /*sticky footer*/ }
+
+/* line 13, scss/style.scss */ wrapper { min-height: 100vh; /*sticky footer*/ }
+
+/* line 17, scss/style.scss */ .flex-fill { flex: 1 1 auto; /*sticky footer*/ }
+
+/* line 22, scss/style.scss */ .bg-theme { background: #57AC35; }
+
+/* line 24, scss/style.scss */ .bg-theme:hover { background: #04AC35; }
+
+/* line 28, scss/style.scss */ .bg-against { background: #5D0CE8; }
+
+/* line 31, scss/style.scss */ .bg-newdark { background: #343434; }
+
+/* line 34, scss/style.scss */ .text-theme { color: #020202; }
+
+/* line 37, scss/style.scss */ .mr-6 { margin-right: 4rem; }
+
+/* line 40, scss/style.scss */ .b-0 { bottom: 0; }
+
+/* line 45, scss/style.scss */ .carousel-indicators li { width: 15px; height: 15px; border: 1px solid #57AC35; border-radius: 50%; background: transparent; }
+
+/* line 52, scss/style.scss */ .carousel-indicators .active { background: #57AC35; }
+
+/* line 61, scss/style.scss */ #generalSite nav ul .nav-item .nav-link { color: white; }
+
+/* line 68, scss/style.scss */ #generalSite #navbarCollapse.collapsing { background: #57AC35; }
+
+/* line 72, scss/style.scss */ #generalSite #navbarCollapse.show { background: #57AC35; }
+
+/* line 83, scss/style.scss */ .otherSite nav ul .nav-item .nav-link { color: #020202; }
+
+/* line 90, scss/style.scss */ .otherSite #navbarCollapse.collapsing { background: #5D0CE8; }
+
+/* line 93, scss/style.scss */ .otherSite #navbarCollapse.collapsing .nav-item .nav-link { color: white; }
+
+/* line 99, scss/style.scss */ .otherSite #navbarCollapse.show { background: #5D0CE8; }
+
+/* line 102, scss/style.scss */ .otherSite #navbarCollapse.show .nav-item .nav-link { color: white; }
+
+/* line 109, scss/style.scss */ .otherSite .premier { background-image: url("../img/services/bussprem.jpg"); }
+
+/* line 112, scss/style.scss */ .otherSite .eject1 { background-image: url("../img/services/sillasEje1.jpg"); background-position-y: -50px; }
+
+/* line 117, scss/style.scss */ .otherSite .eject2 { background-image: url("../img/services/bus.jpg"); background-position-y: -86px; }
+
+/* line 122, scss/style.scss */ .otherSite .bg-hexa { height: 10%; }
+
+/* line 127, scss/style.scss */ .sector { height: 50px; background-attachment: fixed; background-size: contain; background-repeat: no-repeat; margin-top: 57px; }
+
+/* line 141, scss/style.scss */ #carouselExampleIndicators .carousel-inner .carousel-caption { bottom: 30%; }
+
+/* line 143, scss/style.scss */ #carouselExampleIndicators .carousel-inner .carousel-caption h2 { font-size: 1.3rem; line-height: 1.5; font-weight: 400; }
+
+/* line 151, scss/style.scss */ .slider1 { background-image: url("../img/img_export/slider1.jpg"); }
+
+/* line 157, scss/style.scss */ section h3 { font-family: Raleway; font-weight: 600; }
+
+/* line 163, scss/style.scss */ .halfHexa { color: white; }
+
+/* line 165, scss/style.scss */ .halfHexa.ex1 { bottom: 16%; right: 15%; text-align: right; }
+
+/* line 169, scss/style.scss */ .halfHexa.ex1 h1 { font-size: 4rem; font-weight: 600; }
+
+/* line 174, scss/style.scss */ .halfHexa.ex2 { bottom: 19%; right: 13%; width: 50%; }
+
+/* line 179, scss/style.scss */ .halfHexa.ex3 { bottom: 7%; right: 17%; }
+
+/* line 183, scss/style.scss */ .halfHexa.ex3 span span { font-size: 1.8rem; }
+
+/* line 188, scss/style.scss */ .halfHexa span { font-size: 1.2rem; }
+
+/* line 192, scss/style.scss */ .halfHexa p { font-size: 1.2rem; }
+
+/* line 204, scss/style.scss */ #destinos #carruselDestinos .carousel-inner .carousel-item .carousel-caption { right: 0; left: 15px; text-align: left; bottom: 0; }
+
+/* line 212, scss/style.scss */ #destinos #carruselDestinos .carousel-indicators { position: relative; bottom: 0; }
+
+/* line 223, scss/style.scss */ .siteMap a { text-decoration: underline; color: white; }
+
+/* line 228, scss/style.scss */ .destino { height: 232px; background-size: cover; background-repeat: no-repeat; }
+
+/* line 233, scss/style.scss */ #montana { background-image: url("../img/MontañadeColores-Cuzco.jpg"); }
+
+/* line 236, scss/style.scss */ #bosque { background-image: url("../img/BosquedePiedrasdeHuayllay-Pasco.jpg"); }
+
+/* line 239, scss/style.scss */ #bahia { background-image: url("../img/BahiadeSanFernando–Ica.jpg"); }
+
+/* line 242, scss/style.scss */ #parque { background-image: url("../img/ParqueNacionalCerrosdeAmotape_Piura_Tumbes.jpg"); }
+
+/* line 245, scss/style.scss */ #mausoleos { background-image: url("../img/MausoleosdeRevash–Amazonas.jpg"); }
+
+/* line 248, scss/style.scss */ #apu { background-image: url("../img/ApuAusangate-Cuzco.jpg"); }
+
+/* line 251, scss/style.scss */ #cataratas { background-image: url("../img/CataratadeYumbilla_Amazonas.jpg"); }
+
+/* line 254, scss/style.scss */ #canon { background-image: url("../img/CanondeTinajani–Puno.jpg"); background-position-y: 30%; }
+
+/* line 258, scss/style.scss */ #restos { background-image: url("../img/RestosArqueologicosdeTantamayo–Huánuco.jpg"); background-position-y: 90%; }
+
+/* line 266, scss/style.scss */ #subscribe p { font-size: 1rem; }
+
+/* line 269, scss/style.scss */ #subscribe .input-group { width: 50%; }
+
+/* line 271, scss/style.scss */ #subscribe .input-group input { font-size: 0.8rem; }
+
+/* line 274, scss/style.scss */ #subscribe .input-group .input-group-append { cursor: pointer; }
+
+/* line 277, scss/style.scss */ #subscribe .input-group span { font-size: 0.8rem; }
+
+/* line 284, scss/style.scss */ #footProterra .about { margin-top: 30%; }
+
+@media only screen and (min-width: 768px) and (max-width: 979px) { /* line 296, scss/style.scss */ #carouselExampleIndicators .carousel-inner .carousel-caption { bottom: 5%; }
+  /* line 298, scss/style.scss */ #carouselExampleIndicators .carousel-inner .carousel-caption h2 { font-size: 1.8rem; }
+  /* line 309, scss/style.scss */ nav ul .nav-item .nav-link { font-size: 0.8rem; }
+  /* line 318, scss/style.scss */ .halfHexa.ex1 { bottom: 17%; right: 8%; }
+  /* line 321, scss/style.scss */ .halfHexa.ex1 h1 { font-size: 3rem; font-weight: 600; }
+  /* line 327, scss/style.scss */ .halfHexa.ex2 { bottom: 17%; right: 6%; width: 70%; }
+  /* line 332, scss/style.scss */ .halfHexa.ex3 { bottom: 13%; right: 8%; }
+  /* line 336, scss/style.scss */ .halfHexa.ex3 span span { font-size: 1.2rem; }
+  /* line 340, scss/style.scss */ .halfHexa.ex3 h3 { font-size: 1.4rem; }
+  /* line 344, scss/style.scss */ .halfHexa span { font-size: 0.9rem; }
+  /* line 348, scss/style.scss */ .halfHexa p { font-size: 0.8rem; }
+  /* line 356, scss/style.scss */ #destinos .destino h4 { font-size: 1.2rem; }
+  /* line 360, scss/style.scss */ #destinos .destino h5 { font-size: 1rem; }
+  /* line 369, scss/style.scss */ #footProterra .about { text-align: center; }
+  /* line 376, scss/style.scss */ .sector { margin-top: 69px; }
+  /* line 381, scss/style.scss */ .otherSite .premier { background-position-y: -99px; }
+  /* line 385, scss/style.scss */ .otherSite .eject1 { background-position-y: -10px; }
+  /* line 388, scss/style.scss */ .otherSite .eject2 { background-position-y: -200px; }
+  /* line 391, scss/style.scss */ .otherSite .bg-hexa { height: 20%; } }
+
+@media only screen and (min-width: 1200px) { /* line 413, scss/style.scss */ #carouselExampleIndicators .carousel-inner .carousel-caption { right: 8%; left: 8%; }
+  /* line 416, scss/style.scss */ #carouselExampleIndicators .carousel-inner .carousel-caption h2 { font-size: 3rem; }
+  /* line 425, scss/style.scss */ #subscribe p { font-size: 1.5rem; }
+  /* line 428, scss/style.scss */ #subscribe .input-group { width: 25%; }
+  /* line 430, scss/style.scss */ #subscribe .input-group input { font-size: 1rem; }
+  /* line 433, scss/style.scss */ #subscribe .input-group span { font-size: 1rem; }
+  /* line 439, scss/style.scss */ #footProterra .about { margin-top: 0%; }
+  /* line 445, scss/style.scss */ .sector { margin-top: 87px; height: 100px; }
+  /* line 451, scss/style.scss */ .otherSite .premier { background-position-y: -256px; }
+  /* line 455, scss/style.scss */ .otherSite .eject1 { background-position-y: -60px; }
+  /* line 458, scss/style.scss */ .otherSite .eject2 { background-size: cover; background-position-y: -503px; }
+  /* line 462, scss/style.scss */ .otherSite .bg-hexa { height: 20%; } }
